@@ -5,4 +5,5 @@ interface Show {
     id: number;
     release: Date;
     genre: string;
+    comments: string[];
 }

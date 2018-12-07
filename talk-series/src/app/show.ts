@@ -5,6 +5,7 @@ export class Show {
     id: number;
     release: Date;
     genre: string;
+    comments: string[];
 
     constructor() {
       this.clean();
@@ -17,6 +18,7 @@ export class Show {
       this.id = 0;
       this.release = null;
       this.genre = "";
+      this.comments = [];
     }
 
     clone(): Show {
@@ -32,5 +34,6 @@ export class Show {
       this.id = from.id;
       this.release = from.release;
       this.genre = from.genre;
+      this.comments = from.comments;
     }
 }
