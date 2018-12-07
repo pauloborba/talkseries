@@ -1,6 +1,6 @@
 export class Show {
     name: string;
-    sinopse: string;
+    synopsis: string;
     channel: string;
     id: number;
     release: Date;
@@ -12,7 +12,7 @@ export class Show {
 
     clean(): void {
       this.name = "";
-      this.sinopse = "";
+      this.synopsis = "";
       this.channel = "";
       this.id = 0;
       this.release = null;
@@ -27,7 +27,7 @@ export class Show {
 
     copyFrom(from: Show): void {
       this.name = from.name;
-      this.sinopse = from.sinopse;
+      this.synopsis = from.synopsis;
       this.channel = from.channel;
       this.id = from.id;
       this.release = from.release;
