@@ -1,8 +1,7 @@
 export class User {
     username: string;
-    cpf: string;
+    moderator: boolean
     email: string;
-    phone: number;
     birth: Date;
     gender: string;
 
@@ -12,9 +11,8 @@ export class User {
 
     clean(): void {
       this.username = "";
-      this.cpf = "";
+      this.moderator = false;
       this.email = "";
-      this.phone = 0;
       this.birth = null;
       this.gender = "";
     }
@@ -27,9 +25,8 @@ export class User {
 
     copyFrom(from: User): void {
       this.username = from.username;
-      this.cpf = from.cpf;
+      this.moderator = from.moderator;
       this.email = from.email;
-      this.phone = from.phone;
       this.birth = from.birth;
       this.gender = from.gender;
     }

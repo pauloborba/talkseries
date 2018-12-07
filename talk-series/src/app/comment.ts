@@ -5,7 +5,7 @@ export class Comment {
     show: Show["id"];
     id: number;
     data_post: Date;
-    user: User["cpf"];
+    user: User["username"];
 
     constructor() {
       this.clean();
