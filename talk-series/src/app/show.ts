@@ -1,3 +1,5 @@
+import { Comment } from "./comment";
+
 export class Show {
     name: string;
     synopsis: string;
@@ -5,7 +7,7 @@ export class Show {
     id: number;
     release: Date;
     genre: string;
-    comments: string[];
+    comments: Comment[];
 
     constructor() {
       this.clean();

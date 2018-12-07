@@ -1,5 +1,6 @@
 import { Show } from "./show";
 import { User } from "./user";
+
 export class Comment {
     content: string;
     show: Show["id"];
