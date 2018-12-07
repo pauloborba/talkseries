@@ -1,3 +1,3 @@
 interface CadastroDeSeries {
-  serie: Show[] = [];
+  serie: Show[];
 }

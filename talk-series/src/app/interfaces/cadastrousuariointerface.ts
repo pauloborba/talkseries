@@ -1,3 +1,3 @@
 interface CadastroDeUsuarios {
-  usuarios: User[] = [];
+  usuarios: User[];
 }
