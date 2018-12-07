@@ -1,5 +1,6 @@
 export class User {
     username: string;
+    password: string;
     moderator: boolean;
     email: string;
     birth: Date;
@@ -11,6 +12,7 @@ export class User {
 
     clean(): void {
       this.username = "";
+      this.password = "";
       this.moderator = false;
       this.email = "";
       this.birth = null;
@@ -25,6 +27,7 @@ export class User {
 
     copyFrom(from: User): void {
       this.username = from.username;
+      this.password = from.password;
       this.moderator = from.moderator;
       this.email = from.email;
       this.birth = from.birth;
