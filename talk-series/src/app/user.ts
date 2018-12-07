@@ -1,6 +1,6 @@
 export class User {
     username: string;
-    moderator: boolean
+    moderator: boolean;
     email: string;
     birth: Date;
     gender: string;
