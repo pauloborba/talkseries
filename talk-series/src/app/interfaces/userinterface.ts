@@ -5,4 +5,5 @@ interface User {
   email: string;
   birth: Date;
   gender: string;
+  phone: number;
 }

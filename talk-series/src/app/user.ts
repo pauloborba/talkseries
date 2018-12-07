@@ -5,6 +5,7 @@ export class User {
     email: string;
     birth: Date;
     gender: string;
+    phone: number;
 
     constructor() {
       this.clean();
@@ -17,6 +18,7 @@ export class User {
       this.email = "";
       this.birth = null;
       this.gender = "";
+      this.phone = 0;
     }
 
     clone(): User {
@@ -32,5 +34,6 @@ export class User {
       this.email = from.email;
       this.birth = from.birth;
       this.gender = from.gender;
+      this.phone = from.phone;
     }
 }
